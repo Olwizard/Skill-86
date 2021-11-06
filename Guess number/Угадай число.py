@@ -5,12 +5,12 @@
 import numpy as np
 
 def num_very(number):
-    x_m = np.random.randint(1, number)
-    return x_m
+    x_max = np.random.randint(1, number)
+    return x_max
     
 def num_litl(number_l):
-    x_l = np.random.randint(number_l, 101)
-    return x_l
+    x_litl = np.random.randint(number_l, 101)
+    return x_litl
 
 
 def random_predict(number: int = 1) -> int:
