@@ -32,7 +32,7 @@ def random_predict(number: int = 1) -> int:
         
         if x_guess < x_number:
             num_mean = []
-            for x in range(x_guess, x_number):
+            for x in range(x_guess, 101):
                 num_mean.append(x)
 
             x_guess = int(np.mean(num_mean))
@@ -44,7 +44,7 @@ def random_predict(number: int = 1) -> int:
                 
         if x_guess > x_number:
             num_mean_b = []
-            for x in range(x_number, x_guess):
+            for x in range(1, x_guess):
                 num_mean_b.append(x)
 
             x_guess = int(np.mean(num_mean_b))
